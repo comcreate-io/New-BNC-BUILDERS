@@ -49,11 +49,11 @@ export function HeroMain() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 animate-[fadeInUp_0.6s_ease-out_1s_both]">
-              <Button href="/contact-us" size="lg" className="btn-animated hover-lift">
+            <div className="flex flex-wrap gap-3 sm:gap-4 animate-[fadeInUp_0.6s_ease-out_1s_both]">
+              <Button href="/contact-us" size="lg" className="btn-animated hover-lift !px-5 !py-2.5 !text-sm sm:!px-8 sm:!py-4 sm:!text-lg">
                 Get Free Estimate
               </Button>
-              <Button href="/portfolio" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-zinc-900 hover-lift">
+              <Button href="/portfolio" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-zinc-900 hover-lift !px-5 !py-2.5 !text-sm sm:!px-8 sm:!py-4 sm:!text-lg">
                 View Our Work
               </Button>
             </div>
