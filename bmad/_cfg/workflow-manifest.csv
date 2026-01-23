@@ -1,0 +1,6 @@
+id,name,path,description
+party-mode,Party Mode,bmad/core/workflows/party-mode/workflow.yaml,Group chat with all agents
+brainstorming,Brainstorming,bmad/core/workflows/brainstorming,Interactive brainstorming sessions
+prd,PRD Workflow,bmad/bmm/workflows/prd,Product Requirements Document creation
+architecture,Architecture,bmad/bmm/workflows/architecture,Architectural decision facilitation
+workflow-init,Workflow Init,bmad/bmm/workflows/workflow-init,Initialize new BMM project

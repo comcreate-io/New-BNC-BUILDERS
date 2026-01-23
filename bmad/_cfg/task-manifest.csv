@@ -1,0 +1,4 @@
+id,name,path,description
+adv-elicit,Advanced Elicitation,bmad/core/tasks/adv-elicit,Advanced requirements elicitation
+index-docs,Index Documents,bmad/core/tasks/index-docs,Generate document index
+shard-doc,Shard Document,bmad/core/tools/shard-doc,Split large markdown documents

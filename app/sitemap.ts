@@ -1,0 +1,75 @@
+// BNC Builders - Sitemap
+
+import { MetadataRoute } from 'next';
+import { portfolioCategories, portfolioProjects } from '@/lib/constants/portfolio';
+import { blogPosts } from '@/lib/constants/blog';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://bncbuilders.com';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const currentDate = new Date().toISOString();
+
+  // Static pages
+  const staticPages = [
+    '',
+    '/about-us',
+    '/our-process',
+    '/contact-us',
+    '/areas-we-serve',
+    '/reviews',
+    '/portfolio',
+    '/careers',
+    '/blog',
+    '/site-map',
+    '/customer-referral-program',
+    '/adu-handbook-download',
+    // Interior Services
+    '/kitchen-remodeling',
+    '/bathroom-remodeling',
+    '/home-remodeling',
+    '/garage-remodeling',
+    '/new-room-additions',
+    '/adus',
+    '/pre-construction',
+    // Exterior Services
+    '/exterior-remodeling',
+    '/deck-repair',
+    '/hardscaping',
+    '/outdoor-kitchens',
+    '/landscape-remodeling',
+    '/3d-landscape-design',
+  ];
+
+  const staticSitemap: MetadataRoute.Sitemap = staticPages.map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: currentDate,
+    changeFrequency: path === '' ? 'daily' : 'weekly',
+    priority: path === '' ? 1 : path.includes('remodeling') || path.includes('adus') ? 0.9 : 0.8,
+  }));
+
+  // Portfolio category pages
+  const categorySitemap: MetadataRoute.Sitemap = portfolioCategories.map((category) => ({
+    url: `${SITE_URL}/portfolio/${category.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.7,
+  }));
+
+  // Portfolio project pages
+  const projectSitemap: MetadataRoute.Sitemap = portfolioProjects.map((project) => ({
+    url: `${SITE_URL}/portfolio/${project.categorySlug}/${project.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+
+  // Blog post pages
+  const blogSitemap: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: post.date,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...staticSitemap, ...categorySitemap, ...projectSitemap, ...blogSitemap];
+}

@@ -1,26 +1,531 @@
 @import "tailwindcss";
 
+/* ===========================================
+   BNC Builders Brand Colors & Typography
+   =========================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --gold: #CF9C39;
+  --gold-light: #E3C778;
+  --dark: #191B1E;
+  --light: #F4F4F4;
+  --text-dark: #3B3630;
+
+  /* Fonts */
+  --font-heading: 'Geologica', sans-serif;
+  --font-body: 'PT Sans', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ===========================================
+   Custom Utility Classes (Tailwind v4 compatible)
+   =========================================== */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Background Colors */
+.bg-gold { background-color: #CF9C39 !important; }
+.bg-gold-light { background-color: #E3C778 !important; }
+.bg-dark { background-color: #191B1E !important; }
+.bg-gray { background-color: #F4F4F4 !important; }
+
+/* Text Colors */
+.text-gold { color: #CF9C39 !important; }
+.text-gold-light { color: #E3C778 !important; }
+.text-dark { color: #191B1E !important; }
+.text-white { color: #FFFFFF !important; }
+.text-zinc-300 { color: #d4d4d8 !important; }
+.text-zinc-400 { color: #a1a1aa !important; }
+
+/* Hover Background Colors */
+.hover\:bg-gold:hover { background-color: #CF9C39 !important; }
+.hover\:bg-gold-light:hover { background-color: #E3C778 !important; }
+.hover\:bg-gold\/10:hover { background-color: rgba(207, 156, 57, 0.1) !important; }
+.hover\:bg-gold\/20:hover { background-color: rgba(207, 156, 57, 0.2) !important; }
+
+/* Hover Text Colors */
+.hover\:text-gold:hover { color: #CF9C39 !important; }
+.hover\:text-gold-light:hover { color: #E3C778 !important; }
+
+/* Background with opacity */
+.bg-gold\/10 { background-color: rgba(207, 156, 57, 0.1) !important; }
+.bg-gold\/20 { background-color: rgba(207, 156, 57, 0.2) !important; }
+
+/* Border Colors */
+.border-gold { border-color: #CF9C39 !important; }
+.border-gold\/30 { border-color: rgba(207, 156, 57, 0.3) !important; }
+.border-t-gold { border-top-color: #CF9C39 !important; }
+.border-b-gold { border-bottom-color: #CF9C39 !important; }
+
+/* Focus Ring Colors */
+.focus\:ring-gold:focus { --tw-ring-color: #CF9C39 !important; }
+.focus\:border-gold:focus { border-color: #CF9C39 !important; }
+
+/* ===========================================
+   Base Styles
+   =========================================== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: #FFFFFF;
+  line-height: 1.8;
+}
+
+/* ===========================================
+   Typography
+   =========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+/* ===========================================
+   Links
+   =========================================== */
+
+a {
+  color: var(--gold);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+/* ===========================================
+   Focus Styles
+   =========================================== */
+
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ===========================================
+   Dark Section Styles
+   =========================================== */
+
+.dark-section,
+.bg-dark {
+  color: #F4F4F4;
+}
+
+.dark-section h1,
+.dark-section h2,
+.dark-section h3,
+.dark-section h4,
+.dark-section h5,
+.dark-section h6,
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+  color: #FFFFFF;
+}
+
+.dark-section a,
+.bg-dark a {
+  color: var(--gold-light);
+}
+
+.dark-section a:hover,
+.bg-dark a:hover {
+  color: var(--gold);
+}
+
+/* ===========================================
+   Form Inputs
+   =========================================== */
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(207, 156, 57, 0.2);
+}
+
+/* ===========================================
+   Button Styles
+   =========================================== */
+
+.btn-gold {
+  background-color: var(--gold);
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition: all 0.2s ease;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-light);
+  color: var(--dark);
+}
+
+/* ===========================================
+   Animation Keyframes
+   =========================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(207, 156, 57, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(207, 156, 57, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================================
+   Animation Utility Classes
+   =========================================== */
+
+/* Base animation state - elements start hidden */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+}
+
+/* Fade animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  transform: translateY(30px);
+}
+
+.animate-fade-in-up.in-view {
+  transform: translateY(0);
+}
+
+.animate-fade-in-down {
+  transform: translateY(-30px);
+}
+
+.animate-fade-in-down.in-view {
+  transform: translateY(0);
+}
+
+.animate-fade-in-left {
+  transform: translateX(-30px);
+}
+
+.animate-fade-in-left.in-view {
+  transform: translateX(0);
+}
+
+.animate-fade-in-right {
+  transform: translateX(30px);
+}
+
+.animate-fade-in-right.in-view {
+  transform: translateX(0);
+}
+
+/* Scale animations */
+.animate-scale-in {
+  transform: scale(0.9);
+}
+
+.animate-scale-in.in-view {
+  transform: scale(1);
+}
+
+/* Stagger delays for children */
+.stagger-children > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > *:nth-child(2) { transition-delay: 100ms; }
+.stagger-children > *:nth-child(3) { transition-delay: 200ms; }
+.stagger-children > *:nth-child(4) { transition-delay: 300ms; }
+.stagger-children > *:nth-child(5) { transition-delay: 400ms; }
+.stagger-children > *:nth-child(6) { transition-delay: 500ms; }
+.stagger-children > *:nth-child(7) { transition-delay: 600ms; }
+.stagger-children > *:nth-child(8) { transition-delay: 700ms; }
+.stagger-children > *:nth-child(9) { transition-delay: 800ms; }
+.stagger-children > *:nth-child(10) { transition-delay: 900ms; }
+.stagger-children > *:nth-child(11) { transition-delay: 1000ms; }
+.stagger-children > *:nth-child(12) { transition-delay: 1100ms; }
+
+/* Duration modifiers */
+.duration-300 { transition-duration: 0.3s !important; }
+.duration-500 { transition-duration: 0.5s !important; }
+.duration-700 { transition-duration: 0.7s !important; }
+.duration-1000 { transition-duration: 1s !important; }
+
+/* Delay modifiers */
+.delay-100 { transition-delay: 100ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+
+/* Hover animations */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(207, 156, 57, 0.3);
+}
+
+/* Continuous animations */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* Loading shimmer effect */
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Image reveal animation */
+.image-reveal {
+  overflow: hidden;
+}
+
+.image-reveal img {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-reveal:hover img {
+  transform: scale(1.1);
+}
+
+/* Text reveal animation */
+.text-reveal {
+  overflow: hidden;
+}
+
+.text-reveal span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-reveal.in-view span {
+  transform: translateY(0);
+}
+
+/* Button animations */
+.btn-animated {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-animated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-animated:hover::before {
+  left: 100%;
+}
+
+/* Card entrance animation */
+.card-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Counter animation */
+.counter-animate {
+  animation: countUp 0.6s ease-out forwards;
+}
+
+/* Underline animation for links */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
 }
