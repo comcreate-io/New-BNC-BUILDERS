@@ -62,7 +62,7 @@ export function ProcessSteps({
                   {/* Step number circle */}
                   <div className="relative z-10 -mt-16 mb-6">
                     <div className="w-20 h-20 bg-gold rounded-2xl flex items-center justify-center mx-auto shadow-lg transform rotate-3 hover:rotate-0 hover:scale-110 transition-all duration-300">
-                      <span className="text-3xl font-bold text-white">
+                      <span className="text-3xl font-bold text-zinc-800">
                         {step.number}
                       </span>
                     </div>
@@ -91,7 +91,7 @@ export function ProcessSteps({
               {/* Timeline */}
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center shadow-md flex-shrink-0 hover:scale-110 transition-transform">
-                  <span className="text-xl font-bold text-white">{step.number}</span>
+                  <span className="text-xl font-bold text-zinc-800">{step.number}</span>
                 </div>
                 {index < steps.length - 1 && (
                   <div className="w-0.5 h-full bg-gold/30 mt-2" />

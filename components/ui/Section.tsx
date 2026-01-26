@@ -18,7 +18,7 @@ export function Section({
   const backgroundStyles = {
     white: 'bg-white',
     gray: 'bg-gray',
-    dark: 'bg-dark text-white dark-section',
+    dark: 'bg-gold',
   };
 
   const paddingStyles = {

@@ -33,27 +33,33 @@ export function CTABanner({
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
             {title}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-zinc-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto">
             {subtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={primaryAction.href} size="lg" className="hover-glow">
+            <a
+              href={primaryAction.href}
+              className="inline-flex items-center justify-center bg-white text-gold hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-all hover:scale-105"
+            >
               {primaryAction.label}
-            </Button>
+            </a>
 
             {secondaryAction && (
-              <Button href={secondaryAction.href} variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-zinc-900">
+              <a
+                href={secondaryAction.href}
+                className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-gold font-bold py-3 px-8 rounded-lg transition-all"
+              >
                 {secondaryAction.label}
-              </Button>
+              </a>
             )}
 
             {showPhone && (
               <a
                 href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
-                className="inline-flex items-center gap-2 text-white hover:text-gold-light transition-all hover:scale-105 link-underline"
+                className="inline-flex items-center gap-2 bg-white text-gold hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition-all hover:scale-105"
               >
-                <svg className="w-5 h-5 animate-pulse-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -61,7 +67,7 @@ export function CTABanner({
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span className="font-semibold">{company.phone}</span>
+                <span>{company.phone}</span>
               </a>
             )}
           </div>

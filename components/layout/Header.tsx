@@ -32,24 +32,24 @@ export function Header() {
       }`}
     >
       {/* Top Bar */}
-      <div className="bg-dark text-white py-2.5 hidden md:block border-b-2 border-gold">
+      <div className="bg-gold py-2.5 hidden md:block">
         <Container>
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-gold" />
-                <span className="text-zinc-300">{company.address.full}</span>
+                <MapPin className="w-4 h-4 text-white" />
+                <span className="text-white">{company.address.full}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-gold" />
-                <span className="text-zinc-300">{company.officeHours}</span>
+                <Clock className="w-4 h-4 text-white" />
+                <span className="text-white">{company.officeHours}</span>
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <span className="text-gold font-medium">Hablamos Español</span>
+              <span className="text-white font-medium">Hablamos Español</span>
               <a
                 href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
-                className="flex items-center gap-2 font-semibold hover:text-gold transition-colors"
+                className="flex items-center gap-2 font-semibold text-white hover:text-zinc-800 transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 {company.phone}
@@ -80,7 +80,7 @@ export function Header() {
               <Navigation items={mainNavigation} />
               <a
                 href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
-                className="flex items-center gap-2 bg-gold hover:bg-gold-light text-white hover:text-dark px-6 py-3 rounded font-bold uppercase tracking-wide transition-all"
+                className="flex items-center gap-2 bg-gold hover:bg-gold-light text-white px-6 py-3 rounded font-bold uppercase tracking-wide transition-all"
               >
                 <Phone className="w-5 h-5" />
                 <span>{company.phone}</span>

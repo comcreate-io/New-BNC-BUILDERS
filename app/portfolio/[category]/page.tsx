@@ -165,7 +165,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-dark/50 group-hover:bg-dark/40 transition-colors" />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-white font-semibold text-center px-2">
                       {cat.name}

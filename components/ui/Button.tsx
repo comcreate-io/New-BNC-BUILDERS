@@ -27,8 +27,8 @@ export function Button({
     'inline-flex items-center justify-center font-bold uppercase tracking-wide transition-all duration-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 btn-animated hover:scale-[1.02] active:scale-[0.98]';
 
   const variantStyles = {
-    primary: 'bg-gold text-white hover:bg-gold-light hover:text-zinc-900 focus:ring-gold',
-    secondary: 'bg-dark text-white hover:bg-zinc-800 focus:ring-dark',
+    primary: 'bg-gold text-white hover:bg-gold-light focus:ring-gold',
+    secondary: 'bg-zinc-800 text-white hover:bg-zinc-700 focus:ring-zinc-800',
     outline: 'border-2 border-gold text-gold hover:bg-gold hover:text-white focus:ring-gold',
     white: 'bg-white text-zinc-900 hover:bg-zinc-100 focus:ring-white border border-zinc-200',
   };

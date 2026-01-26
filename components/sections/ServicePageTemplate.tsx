@@ -22,24 +22,24 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
       />
 
       {/* Quick Contact Bar */}
-      <section className="bg-dark py-4 sm:py-6 overflow-hidden">
+      <section className="bg-gold py-4 sm:py-6 overflow-hidden">
         <Container>
           <AnimatedSection animation="fade-in-up" duration={500}>
-            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-white">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-zinc-800">
               <div className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-gold flex-shrink-0" />
-                <span className="text-xs sm:text-sm">Call Us: <a href="tel:7609937204" className="font-semibold hover:text-gold">(760) 993-3204</a></span>
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-800 flex-shrink-0" />
+                <span className="text-xs sm:text-sm">Call Us: <a href="tel:7609937204" className="font-semibold hover:text-white">(760) 993-3204</a></span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform">
-                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-gold flex-shrink-0" />
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-800 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Mon - Sat: 8am - 5pm</span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform">
-                <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-gold flex-shrink-0" />
+                <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-800 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Licensed & Insured</span>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 hover:scale-105 transition-transform">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-gold flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-800 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">Free Estimates</span>
               </div>
             </div>

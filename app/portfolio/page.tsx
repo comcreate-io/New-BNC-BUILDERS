@@ -33,16 +33,16 @@ export default function PortfolioPage() {
           <AnimatedSection animation="fade-in-up">
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 py-4">
               <div className="text-center hover:scale-110 transition-transform">
-                <div className="text-3xl font-bold text-gold">{portfolioProjects.length}+</div>
-                <div className="text-zinc-400 text-sm">Projects</div>
+                <div className="text-3xl font-bold text-zinc-900">{portfolioProjects.length}+</div>
+                <div className="text-zinc-800 text-sm">Projects</div>
               </div>
               <div className="text-center hover:scale-110 transition-transform">
-                <div className="text-3xl font-bold text-gold">{portfolioCategories.length}</div>
-                <div className="text-zinc-400 text-sm">Categories</div>
+                <div className="text-3xl font-bold text-zinc-900">{portfolioCategories.length}</div>
+                <div className="text-zinc-800 text-sm">Categories</div>
               </div>
               <div className="text-center hover:scale-110 transition-transform">
-                <div className="text-3xl font-bold text-gold">100%</div>
-                <div className="text-zinc-400 text-sm">Satisfaction</div>
+                <div className="text-3xl font-bold text-zinc-900">100%</div>
+                <div className="text-zinc-800 text-sm">Satisfaction</div>
               </div>
             </div>
           </AnimatedSection>

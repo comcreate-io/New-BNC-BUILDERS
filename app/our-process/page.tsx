@@ -54,12 +54,12 @@ export default function OurProcessPage() {
           <AnimatedSection animation="fade-in-up">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-4">
               <div>
-                <h3 className="text-2xl font-bold text-white mb-1">Our Promise to You</h3>
-                <p className="text-zinc-400">Clear communication. Quality craftsmanship. On-time delivery.</p>
+                <h3 className="text-2xl font-bold text-zinc-900 mb-1">Our Promise to You</h3>
+                <p className="text-zinc-800">Clear communication. Quality craftsmanship. On-time delivery.</p>
               </div>
               <a
                 href="/contact-us"
-                className="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors whitespace-nowrap btn-animated hover-glow"
+                className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors whitespace-nowrap btn-animated hover-glow"
               >
                 Get Started Today
               </a>

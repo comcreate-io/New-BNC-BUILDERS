@@ -193,7 +193,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   </a>
                   <a
                     href="tel:7609933204"
-                    className="w-full inline-flex items-center justify-center gap-2 border-2 border-dark text-dark font-semibold px-6 py-3 rounded-lg hover:bg-dark hover:text-white transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-2 border-2 border-zinc-800 text-zinc-800 font-semibold px-6 py-3 rounded-lg hover:bg-zinc-800 hover:text-white transition-colors"
                   >
                     Call (760) 993-3204
                   </a>

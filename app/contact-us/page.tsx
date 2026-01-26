@@ -121,28 +121,28 @@ export default function ContactUsPage() {
             <div className="lg:col-span-2 space-y-6">
               {/* Why Choose Us */}
               <AnimatedSection animation="fade-in-right" delay={100}>
-                <div className="bg-dark text-white rounded-2xl p-8 hover-lift">
-                  <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-                    <Star className="w-5 h-5 text-gold" />
+                <div className="bg-gold rounded-2xl p-8 hover-lift">
+                  <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <Star className="w-5 h-5 text-white" />
                     Why Choose BNC Builders?
                   </h3>
                   <div className="space-y-5">
                     {values.map((item) => (
                       <div key={item.title} className="flex items-start gap-4 hover:translate-x-1 transition-transform">
-                        <div className="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <item.icon className="w-5 h-5 text-gold" />
+                        <div className="w-10 h-10 bg-white/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <item.icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
                           <p className="font-semibold text-white">{item.title}</p>
-                          <p className="text-zinc-400 text-sm">{item.description}</p>
+                          <p className="text-white/90 text-sm">{item.description}</p>
                         </div>
                       </div>
                     ))}
                   </div>
 
                   {/* CTA */}
-                  <div className="mt-8 pt-6 border-t border-white/10">
-                    <p className="text-sm text-zinc-400 mb-4">
+                  <div className="mt-8 pt-6 border-t border-white/20">
+                    <p className="text-sm text-white mb-4">
                       Ready to get started? Call us now!
                     </p>
                     <a
@@ -276,22 +276,22 @@ function QuickContactSection({ contactMethods }: { contactMethods: ContactMethod
   const [ref, inView] = useInView<HTMLDivElement>({ threshold: 0.2 });
 
   return (
-    <section className="bg-dark py-8 -mt-1">
+    <section className="bg-gold py-8 -mt-1">
       <Container>
         <div ref={ref} className="grid md:grid-cols-3 gap-6">
           {contactMethods.map((method, index) => (
             <div
               key={method.title}
-              className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-gold/30 transition-all group hover-lift card-animate ${inView ? 'in-view' : ''}`}
+              className={`bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gold/30 transition-all group hover-lift card-animate ${inView ? 'in-view' : ''}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                  <method.icon className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <method.icon className="w-6 h-6 text-gold" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-white font-semibold mb-1">{method.title}</h3>
-                  <p className="text-zinc-400 text-sm mb-2">{method.description}</p>
+                  <h3 className="text-zinc-900 font-semibold mb-1">{method.title}</h3>
+                  <p className="text-zinc-600 text-sm mb-2">{method.description}</p>
                   {method.href ? (
                     <a
                       href={method.href}
@@ -305,7 +305,7 @@ function QuickContactSection({ contactMethods }: { contactMethods: ContactMethod
                       )}
                     </a>
                   ) : (
-                    <span className="text-white">{method.value}</span>
+                    <span className="text-zinc-700">{method.value}</span>
                   )}
                 </div>
               </div>

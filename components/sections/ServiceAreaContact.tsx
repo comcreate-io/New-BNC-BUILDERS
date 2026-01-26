@@ -87,9 +87,9 @@ export function ServiceAreaContact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 pb-12 md:pb-16">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Map Section */}
-          <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-full bg-dark overflow-hidden">
+          <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-full bg-gold overflow-hidden">
             <Image
-              src="https://res.cloudinary.com/dku1gnuat/image/upload/v1769159803/Screenshot_2026-01-23_at_3.16.40_a.m._gzlxlc.png"
+              src="/map.png"
               alt="BNC Builders Service Areas - Escondido, Rancho Santa Fe, Oceanside, Carlsbad, Encinitas, Carmel Valley, Vista, Poway, Solana Beach, La Jolla"
               fill
               className="object-cover"
@@ -224,7 +224,7 @@ export function ServiceAreaContact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-gold hover:bg-gold-light text-white hover:text-dark font-bold py-3 px-8 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-wide"
+                  className="bg-gold hover:bg-gold-light text-white font-bold py-3 px-8 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-wide"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>

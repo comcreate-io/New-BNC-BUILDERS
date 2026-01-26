@@ -46,12 +46,12 @@ export function MobileMenu({ isOpen, onClose, items }: MobileMenuProps) {
       >
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 bg-dark">
-            <span className="text-lg font-bold text-white">Menu</span>
+          <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-800/20 bg-gold">
+            <span className="text-lg font-bold text-zinc-800">Menu</span>
             <button
               type="button"
               onClick={onClose}
-              className="p-2 text-zinc-400 hover:text-white transition-colors rounded-full hover:bg-white/10"
+              className="p-2 text-zinc-800 hover:text-white transition-colors rounded-full hover:bg-zinc-800/10"
               aria-label="Close menu"
             >
               <X className="w-6 h-6" />
@@ -70,7 +70,7 @@ export function MobileMenu({ isOpen, onClose, items }: MobileMenuProps) {
             {/* Phone CTA */}
             <a
               href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
-              className="flex items-center justify-center gap-2 w-full bg-gold text-white px-6 py-3.5 rounded font-bold uppercase tracking-wide hover:bg-gold-light hover:text-dark transition-colors"
+              className="flex items-center justify-center gap-2 w-full bg-gold text-white px-6 py-3.5 rounded font-bold uppercase tracking-wide hover:bg-gold-light transition-colors"
             >
               <Phone className="w-5 h-5" />
               Call {company.phone}

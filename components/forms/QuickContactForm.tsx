@@ -141,7 +141,7 @@ export function QuickContactForm() {
               type="button"
               onClick={handleNextStep}
               disabled={!formData.firstName || !formData.lastName || !formData.email}
-              className="bg-dark hover:bg-zinc-800 text-white px-6 sm:px-8 py-3 rounded-full font-bold uppercase tracking-wider transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm sm:text-base"
+              className="bg-zinc-800 hover:bg-zinc-700 text-white px-6 sm:px-8 py-3 rounded-full font-bold uppercase tracking-wider transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm sm:text-base"
             >
               Next Step
             </button>
@@ -154,7 +154,7 @@ export function QuickContactForm() {
         <div className={`${step === 2 ? 'block' : 'hidden'}`}>
           <div className="max-w-5xl mx-auto px-4 sm:px-5">
             <div className="bg-gold py-4 sm:py-5 px-4 sm:px-6 rounded-lg shadow-lg">
-              <h3 className="text-white font-bold text-base sm:text-lg md:text-xl text-center mb-4">
+              <h3 className="text-zinc-800 font-bold text-base sm:text-lg md:text-xl text-center mb-4">
                 Almost There! Tell Us More
               </h3>
               {error && (
@@ -197,7 +197,7 @@ export function QuickContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting || !formData.phone || !formData.reason}
-                className="flex-1 md:flex-none bg-dark hover:bg-zinc-800 text-white px-4 sm:px-8 py-3 rounded-full font-bold uppercase tracking-wider transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm sm:text-base"
+                className="flex-1 md:flex-none bg-zinc-800 hover:bg-zinc-700 text-white px-4 sm:px-8 py-3 rounded-full font-bold uppercase tracking-wider transition-all disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap text-sm sm:text-base"
               >
                 {isSubmitting ? 'Sending...' : 'Get Estimate'}
               </button>

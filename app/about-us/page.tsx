@@ -45,11 +45,11 @@ export default function AboutUsPage() {
             {stats.map((stat, index) => (
               <AnimatedSection key={stat.label} animation="fade-in-up" delay={index * 100}>
                 <div className="text-center hover:scale-105 transition-transform">
-                  <stat.icon className="w-8 h-8 text-gold mx-auto mb-3" />
-                  <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                  <stat.icon className="w-8 h-8 text-zinc-800 mx-auto mb-3" />
+                  <div className="text-3xl md:text-4xl font-bold text-zinc-900 mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-zinc-400 text-sm uppercase tracking-wider">
+                  <div className="text-zinc-800 text-sm uppercase tracking-wider">
                     {stat.label}
                   </div>
                 </div>
@@ -268,10 +268,10 @@ function CoreValuesSection() {
     <Section background="dark" padding="lg">
       <Container>
         <AnimatedSection animation="fade-in-up" className="text-center mb-16">
-          <span className="text-gold font-semibold uppercase tracking-wider text-sm">
+          <span className="text-zinc-800 font-semibold uppercase tracking-wider text-sm">
             What We Stand For
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mt-2">
             Our Core Values
           </h2>
         </AnimatedSection>
@@ -281,13 +281,13 @@ function CoreValuesSection() {
             return (
               <div
                 key={value.id}
-                className={`bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 hover:border-gold/30 transition-all group hover-lift card-animate ${inView ? 'in-view' : ''}`}
+                className={`bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg hover:border-gold/30 transition-all group hover-lift card-animate ${inView ? 'in-view' : ''}`}
                 style={{ transitionDelay: `${index * 75}ms` }}
               >
-                <div className="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/30 group-hover:scale-110 transition-all">
+                <div className="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/20 group-hover:scale-110 transition-all">
                   <IconComponent className="w-7 h-7 text-gold" />
                 </div>
-                <h3 className="font-semibold text-white text-sm md:text-base">
+                <h3 className="font-semibold text-zinc-900 text-sm md:text-base">
                   {value.name}
                 </h3>
               </div>

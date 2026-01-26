@@ -190,7 +190,7 @@ export default function HomePage() {
           <AnimatedSection animation="fade-in-up" delay={400} className="text-center mt-10">
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-white font-semibold px-8 py-3 rounded-lg transition-all hover:gap-3 btn-animated"
+              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-white font-semibold px-8 py-3 rounded-lg transition-all hover:gap-3 btn-animated"
             >
               View Full Portfolio
               <ArrowRight className="w-5 h-5" />
@@ -245,10 +245,10 @@ function StatsSection() {
               className={`card-animate ${inView ? 'in-view' : ''}`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="text-4xl md:text-5xl font-bold text-gold mb-2 hover:scale-110 transition-transform cursor-default">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2 hover:scale-110 transition-transform cursor-default">
                 {stat.value}
               </div>
-              <div className="text-zinc-400">{stat.label}</div>
+              <div className="text-white">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -273,13 +273,13 @@ function CoreValuesSection({ coreValues }: { coreValues: CoreValue[] }) {
     <Section background="dark" padding="lg">
       <Container>
         <AnimatedSection animation="fade-in-up" className="text-center mb-12">
-          <span className="text-gold font-semibold uppercase tracking-wider text-sm">
+          <span className="text-white font-semibold uppercase tracking-wider text-sm">
             Why Choose BNC Builders
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">
             The BNC Builders Difference
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             We are not just contractors - we are your partners in creating the home of your dreams through kitchen remodel Poway, bathroom remodeling Escondido, ADUs Los Angeles, and more.
           </p>
         </AnimatedSection>
@@ -290,17 +290,17 @@ function CoreValuesSection({ coreValues }: { coreValues: CoreValue[] }) {
             return (
               <div
                 key={index}
-                className={`bg-white/5 border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 hover:border-gold/30 transition-all duration-300 hover-lift card-animate ${inView ? 'in-view' : ''}`}
+                className={`bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg hover:border-gold/30 transition-all duration-300 hover-lift card-animate ${inView ? 'in-view' : ''}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <Icon className="w-7 h-7 text-gold" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{value.title}</h3>
-                <p className="text-zinc-400 text-sm mb-4">{value.description}</p>
+                <h3 className="text-lg font-bold text-zinc-900 mb-2">{value.title}</h3>
+                <p className="text-zinc-600 text-sm mb-4">{value.description}</p>
                 <ul className="space-y-2 text-left">
                   {value.points.map((point, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm text-zinc-300">
+                    <li key={i} className="flex items-center gap-2 text-sm text-zinc-600">
                       <CheckCircle className="w-4 h-4 text-gold flex-shrink-0" />
                       {point}
                     </li>

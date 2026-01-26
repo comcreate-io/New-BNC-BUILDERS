@@ -73,7 +73,7 @@ export default function AreasWeServePage() {
                   href="https://maps.google.com/?q=101+State+Pl+Suite+N,+Escondido,+CA+92029"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-dark text-dark font-semibold px-6 py-3 rounded-lg hover:bg-dark hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-zinc-800 text-zinc-800 font-semibold px-6 py-3 rounded-lg hover:bg-zinc-800 hover:text-white transition-colors"
                 >
                   <MapPin className="w-5 h-5" />
                   Visit Our Office
@@ -82,31 +82,31 @@ export default function AreasWeServePage() {
             </div>
 
             {/* Stats Card */}
-            <div className="bg-dark rounded-2xl p-8 text-white">
+            <div className="bg-gold rounded-2xl p-8">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4">
-                  <div className="text-4xl font-bold text-gold mb-1">14+</div>
-                  <div className="text-zinc-400 text-sm">Cities Served</div>
+                  <div className="text-4xl font-bold text-zinc-900 mb-1">14+</div>
+                  <div className="text-zinc-800 text-sm">Cities Served</div>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl font-bold text-gold mb-1">900+</div>
-                  <div className="text-zinc-400 text-sm">Projects Completed</div>
+                  <div className="text-4xl font-bold text-zinc-900 mb-1">900+</div>
+                  <div className="text-zinc-800 text-sm">Projects Completed</div>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl font-bold text-gold mb-1">30+</div>
-                  <div className="text-zinc-400 text-sm">Years Experience</div>
+                  <div className="text-4xl font-bold text-zinc-900 mb-1">30+</div>
+                  <div className="text-zinc-800 text-sm">Years Experience</div>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl font-bold text-gold mb-1">5.0</div>
-                  <div className="text-zinc-400 text-sm">Star Rating</div>
+                  <div className="text-4xl font-bold text-zinc-900 mb-1">5.0</div>
+                  <div className="text-zinc-800 text-sm">Star Rating</div>
                 </div>
               </div>
-              <div className="mt-6 pt-6 border-t border-white/10">
+              <div className="mt-6 pt-6 border-t border-zinc-800/20">
                 <div className="flex items-start gap-3">
-                  <Building2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                  <Building2 className="w-5 h-5 text-zinc-800 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-semibold">101 State Pl Suite N</div>
-                    <div className="text-zinc-400 text-sm">Escondido, CA 92029</div>
+                    <div className="font-semibold text-zinc-900">101 State Pl Suite N</div>
+                    <div className="text-zinc-800 text-sm">Escondido, CA 92029</div>
                   </div>
                 </div>
               </div>
@@ -130,8 +130,8 @@ export default function AreasWeServePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {Object.entries(regions).map(([key, region]) => (
               <div key={key} className="bg-white rounded-xl overflow-hidden shadow-md">
-                <div className="bg-dark px-6 py-4">
-                  <h3 className="text-xl font-bold text-white">{region.name}</h3>
+                <div className="bg-gold px-6 py-4">
+                  <h3 className="text-xl font-bold text-zinc-900">{region.name}</h3>
                 </div>
                 <ul className="p-6 space-y-3">
                   {region.areas.map((area) => (
@@ -207,8 +207,8 @@ export default function AreasWeServePage() {
               },
             ].map((item, index) => (
               <div key={index} className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-zinc-400">{item.description}</p>
+                <h3 className="text-xl font-bold text-zinc-900 mb-2">{item.title}</h3>
+                <p className="text-zinc-800">{item.description}</p>
               </div>
             ))}
           </div>
