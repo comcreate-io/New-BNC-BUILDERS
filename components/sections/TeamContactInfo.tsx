@@ -13,7 +13,7 @@ export function TeamContactInfo() {
           <div className="flex justify-center md:justify-start">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[520px] lg:h-[520px] rounded-full overflow-hidden bg-gray-100">
               <Image
-                src="https://res.cloudinary.com/dku1gnuat/image/upload/q_auto,f_auto/v1767036018/BNC-BUILDERS/assets_mainstage_mainstage-img.2505221031508.jpg"
+                src="https://res.cloudinary.com/dku1gnuat/image/upload/q_auto,f_auto/v1769542130/Copy_of__DSC0177_gij1ds.jpg"
                 alt="BNC Builders team reviewing project plans"
                 fill
                 className="object-cover"
