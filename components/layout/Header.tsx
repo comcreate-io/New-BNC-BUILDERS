@@ -46,6 +46,7 @@ export function Header() {
               </div>
             </div>
             <div className="flex items-center gap-6">
+              <span className="text-white font-medium">License #: 1050284</span>
               <span className="text-white font-medium">Hablamos Español</span>
               <a
                 href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
