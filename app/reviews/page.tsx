@@ -101,8 +101,8 @@ export default function ReviewsPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Customer Reviews - Kitchen Remodel Escondido CA & More"
-        subtitle="See what our customers say about BNC Builders kitchen remodeling services, bathroom remodeling San Diego, ADUs San Diego, deck repair contractor, and remodeling Escondido projects."
+        title="Customer Reviews - Kitchen Remodel Escondido CA, Bathroom Remodeling San Diego & More"
+        subtitle="See what our customers say about BNC Builders kitchen remodeling services, kitchen remodel San Diego, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling San Diego, bathroom remodeling Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, and remodeling Escondido projects."
         backgroundImage={bannerImages.reviews}
       />
 
@@ -114,8 +114,8 @@ export default function ReviewsPage() {
 
       {/* CTA */}
       <CTABanner
-        title="Ready to Join Our Happy Kitchen Remodel Escondido & Bathroom Remodeling Customers?"
-        subtitle="Contact BNC Builders for kitchen remodeling services, bathroom remodeling San Diego, ADUs San Diego, deck repair contractor, room addition San Diego, and exterior remodeling."
+        title="Ready to Join Our Happy Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Customers?"
+        subtitle="Contact BNC Builders for kitchen remodeling services, kitchen remodel San Diego, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling San Diego, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido."
       />
     </>
   );

@@ -27,13 +27,13 @@ export function HeroMain() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-white">
             <p className="text-gold-light font-semibold mb-2 text-sm sm:text-base animate-[fadeInUp_0.6s_ease-out_0.2s_both]">
-              Kitchen Remodel Escondido CA | Bathroom Remodeling San Diego | ADUs San Diego
+              Kitchen Remodel Escondido CA | Bathroom Remodeling San Diego | ADUs San Diego | Remodeling Escondido
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 leading-tight text-white animate-[fadeInUp_0.6s_ease-out_0.4s_both]">
               We Build & Remodel Homes With Peace Of Mind!
             </h1>
             <p className="text-lg sm:text-xl text-zinc-300 mb-6 sm:mb-8 max-w-lg animate-[fadeInUp_0.6s_ease-out_0.6s_both]">
-              BNC Builders delivers expert kitchen remodeling services, bathroom remodeling Escondido, ADUs Los Angeles, deck repair San Diego, room addition San Diego, and exterior remodeling for your dream home.
+              BNC Builders delivers expert kitchen remodeling services, bathroom remodeling Escondido, bathroom remodeling San Diego, ADUs Los Angeles, ADUs San Diego, deck repair San Diego, deck repair contractor services, room addition San Diego, exterior remodeling, and landscape remodeling for your dream home.
             </p>
 
             {/* Stats */}
@@ -85,7 +85,7 @@ export function HeroMain() {
               <div className="animate-float">
                 <CloudinaryImage
                   publicId={heroImages.mainStageImg}
-                  alt="Kitchen remodel Escondido CA and bathroom remodeling San Diego by BNC Builders"
+                  alt="Kitchen remodel Escondido CA, bathroom remodeling San Diego, ADUs San Diego, and remodeling Escondido by BNC Builders"
                   width={550}
                   height={400}
                   className="rounded-lg shadow-2xl hover:shadow-gold/20 transition-shadow duration-500"

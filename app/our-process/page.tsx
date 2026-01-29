@@ -40,8 +40,8 @@ export default function OurProcessPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Our Process"
-        subtitle="Simple. Transparent. Stress-free."
+        title="Our Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Process"
+        subtitle="Simple. Transparent. Stress-free. Whether you need kitchen remodeling services, kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, deck repair San Diego, or remodeling Escondido, BNC Builders makes it easy."
         backgroundImage={bannerImages.faq}
       />
 
@@ -73,8 +73,8 @@ export default function OurProcessPage() {
 
       {/* CTA */}
       <CTABanner
-        title="Ready to Get Started?"
-        subtitle="Schedule your free consultation today."
+        title="Ready to Get Started with Kitchen Remodel Escondido CA, Bathroom Remodeling San Diego, or ADUs?"
+        subtitle="Schedule your free consultation today for kitchen remodeling services, kitchen remodel San Diego, kitchen remodel Poway, kitchen renovation San Diego, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido."
         primaryAction={{ label: 'Contact Us', href: '/contact-us' }}
       />
     </>

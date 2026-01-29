@@ -22,8 +22,8 @@ export default function PortfolioPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Portfolio"
-        subtitle="Explore our collection of kitchen remodeling services, bathroom remodeling Escondido, ADUs San Diego, deck repair San Diego, room addition San Diego, and exterior remodeling transformations"
+        title="Kitchen Remodel Escondido CA, Kitchen Remodel San Diego & Bathroom Remodeling San Diego Portfolio"
+        subtitle="Explore our collection of kitchen remodeling services, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, 3D landscape design near me, and remodeling Escondido transformations by BNC Builders"
         backgroundImage={bannerImages.faq}
       />
 
@@ -57,8 +57,8 @@ export default function PortfolioPage() {
 
       {/* CTA */}
       <CTABanner
-        title="Ready for Kitchen Remodel San Diego or Bathroom Remodeling Escondido?"
-        subtitle="Contact BNC Builders for kitchen remodeling services, bathroom remodeling San Diego, ADUs San Diego, deck repair contractor, and exterior remodeling."
+        title="Ready for Kitchen Remodel San Diego, Kitchen Remodel Escondido CA, or Bathroom Remodeling Escondido?"
+        subtitle="Contact BNC Builders for kitchen remodeling services, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling San Diego, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, outdoor decking material, 3D landscape design near me, and remodeling Escondido."
         primaryAction={{ label: 'Get Free Quote', href: '/contact-us' }}
       />
     </>
