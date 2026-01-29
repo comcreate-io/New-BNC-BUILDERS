@@ -26,7 +26,7 @@ export function TrustBadges({
             {keySellingPoints.map((point, index) => (
               <div
                 key={point.title}
-                className={`flex items-start gap-3 bg-zinc-50 rounded-xl p-4 hover:bg-gold/5 hover:shadow-md transition-all card-animate ${pointsInView ? 'in-view' : ''}`}
+                className={`flex items-center gap-3 bg-zinc-50 rounded-xl p-4 hover:bg-gold/5 hover:shadow-md transition-all card-animate ${pointsInView ? 'in-view' : ''}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="bg-gold/10 rounded-full p-2 flex-shrink-0">
