@@ -31,12 +31,12 @@ export const coreValues: CoreValue[] = [
 ];
 
 export const keySellingPoints = [
-  'Licensed & Insured',
-  'Financing Options Available',
-  'Hablamos Español',
-  'Free Estimates',
-  'Accredited by Better Business Bureau',
-  'Top-rated service provider on HomeAdvisor',
+  'Licensed & Insured for kitchen remodel Escondido CA and bathroom remodeling San Diego',
+  'Financing Options Available for ADUs San Diego and ADUs Los Angeles',
+  'Hablamos Español - kitchen remodeling services and remodeling Escondido',
+  'Free Estimates for kitchen remodel San Diego, deck repair San Diego, exterior remodeling',
+  'Accredited by Better Business Bureau for bathroom remodeling Escondido',
+  'Top-rated service provider for kitchen remodel Poway and Escondido kitchen remodeling',
 ];
 
 export const serviceAreas = [

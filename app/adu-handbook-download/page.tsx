@@ -8,8 +8,8 @@ import { bannerImages, specialImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Download Our ADU Handbook',
-  description: 'Get your free ADU Handbook from BNC Builders Inc. Learn everything you need to know about building an Accessory Dwelling Unit in San Diego County.',
+  title: 'Download Our ADU Handbook | ADUs San Diego & ADUs Los Angeles | BNC Builders',
+  description: 'Get your free ADU Handbook from BNC Builders Inc. Learn everything about ADUs San Diego and ADUs Los Angeles construction, permits, and financing. The same experts trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and remodeling Escondido.',
 });
 
 export default function ADUHandbookDownloadPage() {
@@ -17,8 +17,8 @@ export default function ADUHandbookDownloadPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Download Our ADU Handbook"
-        subtitle="Your comprehensive guide to Accessory Dwelling Units in San Diego County"
+        title="Download Our ADUs San Diego & ADUs Los Angeles Handbook"
+        subtitle="Your comprehensive guide to ADUs San Diego and ADUs Los Angeles construction from BNC Builders - the same experts trusted for kitchen remodel Escondido CA, kitchen remodel San Diego, bathroom remodeling San Diego, bathroom remodeling Escondido, deck repair San Diego, and remodeling Escondido."
         backgroundImage={bannerImages.adu}
       />
 
@@ -28,10 +28,10 @@ export default function ADUHandbookDownloadPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-zinc-900 mb-6">
-                Everything You Need to Know About ADUs
+                Everything You Need to Know About ADUs San Diego & ADUs Los Angeles
               </h2>
               <p className="text-lg text-zinc-600 mb-6">
-                Our comprehensive ADU Handbook covers everything from regulations and permits to design considerations and construction timelines. Whether you&apos;re looking to create rental income, house extended family, or add a home office, this guide has you covered.
+                Our comprehensive ADUs San Diego and ADUs Los Angeles Handbook covers everything from regulations and permits to design considerations and construction timelines. Whether you&apos;re looking to create rental income, house extended family, or add a home office, this guide from BNC Builders has you covered. We&apos;re the same team trusted for kitchen remodel Escondido CA, kitchen remodeling services, bathroom remodeling San Diego, bathroom remodeling Escondido, deck repair San Diego, exterior remodeling, and remodeling Escondido.
               </p>
 
               <h3 className="text-xl font-bold text-zinc-900 mb-4">What&apos;s Inside:</h3>

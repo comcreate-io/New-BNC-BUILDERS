@@ -76,8 +76,8 @@ export default function CareersPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Join Our Team"
-        subtitle="Build your career with BNC Builders Inc."
+        title="Join the BNC Builders Team - Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Experts"
+        subtitle="Build your career with BNC Builders Inc. - the leading contractor for kitchen remodeling services, kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, deck repair San Diego, and remodeling Escondido."
         backgroundImage={bannerImages.faq}
       />
 
@@ -86,10 +86,10 @@ export default function CareersPage() {
         <Container size="md">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-zinc-900 mb-4">
-              Work With Us
+              Work With BNC Builders - Kitchen Remodeling Services & Remodeling Escondido Leaders
             </h2>
             <p className="text-lg text-zinc-600">
-              BNC Builders Inc. is always looking for talented individuals who share our commitment to quality and customer satisfaction. We offer competitive pay, growth opportunities, and a positive work environment.
+              BNC Builders Inc. is always looking for talented individuals who share our commitment to quality and customer satisfaction. Join our team delivering kitchen remodel Escondido CA, kitchen remodel San Diego, kitchen remodel Poway, bathroom remodeling San Diego, bathroom remodeling Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido services. We offer competitive pay, growth opportunities, and a positive work environment.
             </p>
           </div>
         </Container>

@@ -8,8 +8,8 @@ import { bannerImages, specialImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Customer Referral Program',
-  description: 'Refer friends and family to BNC Builders Inc. and earn rewards! Join our Refer and Dine program today.',
+  title: 'Customer Referral Program | Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego',
+  description: 'Refer friends and family to BNC Builders Inc. for kitchen remodeling services, kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, deck repair San Diego, and remodeling Escondido - earn rewards with our Refer and Dine program!',
 });
 
 export default function CustomerReferralProgramPage() {
@@ -17,8 +17,8 @@ export default function CustomerReferralProgramPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Customer Referral Program"
-        subtitle="Refer and Dine - Earn rewards for sharing the BNC experience"
+        title="BNC Builders Customer Referral Program - Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego"
+        subtitle="Refer and Dine - Earn rewards for sharing the BNC Builders experience with kitchen remodeling services, kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, exterior remodeling, and remodeling Escondido."
         backgroundImage={bannerImages.faq}
       />
 
@@ -31,7 +31,7 @@ export default function CustomerReferralProgramPage() {
                 Refer and Dine Program
               </h2>
               <p className="text-lg text-zinc-600 mb-6">
-                Know someone who could use our services? Refer them to BNC Builders Inc. and when they complete a project with us, you&apos;ll receive a reward as our thank you!
+                Know someone who could use our kitchen remodel Escondido CA, kitchen remodel San Diego, kitchen remodeling services, bathroom remodeling San Diego, bathroom remodeling Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, exterior remodeling, landscape remodeling, outdoor kitchens, or remodeling Escondido services? Refer them to BNC Builders Inc. and when they complete a project with us, you&apos;ll receive a reward as our thank you!
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
