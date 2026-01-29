@@ -13,7 +13,7 @@ export function OrganizationJsonLd() {
     name: company.name,
     alternateName: 'BNC Builders',
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/favicon/web-app-manifest-512x512.png`,
     image: `${SITE_URL}/og-image.jpg`,
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more.',
     telephone: company.phone,

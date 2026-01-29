@@ -6,6 +6,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ScrollToTop } from '@/components/layout/ScrollToTop';
 import { defaultMetadata } from '@/lib/utils/metadata';
+import { OrganizationJsonLd, WebsiteJsonLd } from '@/components/seo/JsonLd';
 
 const ptSans = PT_Sans({
   weight: ['400', '700'],
@@ -50,6 +51,8 @@ export default function RootLayout({
             gtag('config', 'AW-16672110303');
           `}
         </Script>
+        <OrganizationJsonLd />
+        <WebsiteJsonLd />
         <ScrollToTop />
         <Header />
         <main className="min-h-screen pt-[72px] md:pt-[112px]">{children}</main>
