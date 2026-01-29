@@ -11,26 +11,26 @@ import { useInView } from '@/lib/hooks/useInView';
 const steps = [
   {
     number: '01',
-    title: 'Free Consultation',
-    description: 'We start by listening. Tell us about your vision, your needs, and your budget. We\'ll visit your home, take measurements, and discuss possibilities.',
+    title: 'Discovery Conversation',
+    description: 'Every successful kitchen remodel Escondido CA or bathroom remodeling San Diego project starts with understanding your goals. We visit your home, ask questions about how you live, and listen carefully to what you want to change. No sales pressure - just genuine curiosity about your vision.',
     icon: Phone,
   },
   {
     number: '02',
-    title: 'Design & Proposal',
-    description: 'Our team creates a detailed plan with material selections, timelines, and transparent pricing. No surprises, no hidden fees.',
+    title: 'Custom Design & Pricing',
+    description: 'Our team creates detailed plans with material options that match your budget. For kitchen remodeling services and remodeling Escondido projects, you see 3D renderings before we begin. Transparent pricing means no surprises - you know exactly what you are getting and what it costs.',
     icon: ClipboardList,
   },
   {
     number: '03',
-    title: 'Construction',
-    description: 'Our skilled craftsmen bring your vision to life. You\'ll have a dedicated project manager keeping you informed every step of the way.',
+    title: 'Expert Construction',
+    description: 'Our skilled craftsmen bring your vision to life, whether it is ADUs San Diego, deck repair San Diego, or a complete kitchen renovation San Diego. Your dedicated project manager provides daily updates. We protect your home, respect your schedule, and maintain clean work areas throughout.',
     icon: Hammer,
   },
   {
     number: '04',
-    title: 'Final Walkthrough',
-    description: 'We inspect every detail together. Your project isn\'t complete until you\'re 100% satisfied with the results.',
+    title: 'Quality Walkthrough',
+    description: 'Your bathroom remodeling Escondido, exterior remodeling, or landscape remodeling project is not complete until you are genuinely delighted. We walk through every detail together, address any concerns, and ensure your finished space exceeds expectations before we call it done.',
     icon: Key,
   },
 ];
@@ -40,8 +40,8 @@ export default function OurProcessPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Our Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Process"
-        subtitle="Simple. Transparent. Stress-free. Whether you need kitchen remodeling services, kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, deck repair San Diego, or remodeling Escondido, BNC Builders makes it easy."
+        title="How BNC Builders Turns Your Vision Into Reality"
+        subtitle="No confusion. No surprises. No stress. Whether you need kitchen remodel San Diego, bathroom remodeling Escondido, ADUs Los Angeles, or complete exterior remodelers services, our refined process makes transformation enjoyable."
         backgroundImage={bannerImages.faq}
       />
 
@@ -54,14 +54,14 @@ export default function OurProcessPage() {
           <AnimatedSection animation="fade-in-up">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 py-4">
               <div>
-                <h3 className="text-2xl font-bold text-zinc-900 mb-1">Our Promise to You</h3>
-                <p className="text-zinc-800">Clear communication. Quality craftsmanship. On-time delivery.</p>
+                <h3 className="text-2xl font-bold text-zinc-900 mb-1">The BNC Builders Promise</h3>
+                <p className="text-zinc-800">Honest communication. Skilled craftsmanship. Delivered on schedule.</p>
               </div>
               <a
                 href="/contact-us"
                 className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors whitespace-nowrap btn-animated hover-glow"
               >
-                Get Started Today
+                Begin Your Project
               </a>
             </div>
           </AnimatedSection>
@@ -73,9 +73,9 @@ export default function OurProcessPage() {
 
       {/* CTA */}
       <CTABanner
-        title="Ready to Get Started with Kitchen Remodel Escondido CA, Bathroom Remodeling San Diego, or ADUs?"
-        subtitle="Schedule your free consultation today for kitchen remodeling services, kitchen remodel San Diego, kitchen remodel Poway, kitchen renovation San Diego, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido."
-        primaryAction={{ label: 'Contact Us', href: '/contact-us' }}
+        title="Ready to Experience the BNC Builders Difference?"
+        subtitle="Schedule your free consultation for kitchen remodel Escondido CA, kitchen remodel Poway, bathroom remodeling San Diego, ADUs San Diego, deck repair contractor services, room addition San Diego, garage remodeling, outdoor kitchens, or any remodeling Escondido project."
+        primaryAction={{ label: 'Schedule Consultation', href: '/contact-us' }}
       />
     </>
   );
@@ -97,10 +97,10 @@ function ProcessSection({ steps }: { steps: Step[] }) {
       <Container>
         <AnimatedSection animation="fade-in-up" className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
-            From Vision to Reality in 4 Steps
+            Four Steps to Your Transformed Home
           </h2>
           <p className="text-lg text-zinc-600">
-            We&apos;ve refined our process over 25 years to make your remodeling experience as smooth as possible.
+            After 30+ years of combined experience and 900+ projects, we have refined our process to eliminate stress and maximize results for every kitchen remodeling Escondido CA, bathroom remodel Escondido, and 3D landscape design near me project.
           </p>
         </AnimatedSection>
 
@@ -142,10 +142,10 @@ function WhatToExpectSection() {
   const [ref, inView] = useInView<HTMLDivElement>({ threshold: 0.1 });
 
   const items = [
-    { q: 'How long does a typical project take?', a: 'Project timelines vary based on scope. A bathroom remodel typically takes 2-4 weeks, while a full kitchen renovation may take 6-10 weeks. We\'ll provide a detailed timeline during your consultation.' },
-    { q: 'Do you handle permits?', a: 'Yes! We handle all necessary permits and inspections. Our team ensures your project meets all local building codes and regulations.' },
-    { q: 'Can I live in my home during construction?', a: 'In most cases, yes. We take great care to minimize disruption and keep work areas clean and contained. We\'ll discuss logistics during planning.' },
-    { q: 'What about unexpected issues?', a: 'We communicate immediately if we discover anything unexpected. Any changes to scope or budget are discussed and approved by you before we proceed.' },
+    { q: 'How long will my project take?', a: 'Timelines depend on scope. A bathroom remodeling Escondido typically runs 3-4 weeks. A kitchen remodel San Diego averages 6-10 weeks. ADUs San Diego take 8-14 months including permits. We provide detailed schedules during consultation so you can plan accordingly.' },
+    { q: 'Who handles permits and inspections?', a: 'We do. Our team manages all permitting for your kitchen remodeling services, ADUs Los Angeles, deck repair San Diego, or room addition San Diego project. You should not have to navigate bureaucracy - that is our job.' },
+    { q: 'Can my family stay home during construction?', a: 'Usually yes. We phase work to minimize disruption, contain dust and debris, and maintain safe pathways. For major kitchen remodel Escondido CA projects, we can set up temporary cooking areas. We discuss logistics during planning.' },
+    { q: 'What happens if something unexpected comes up?', a: 'Older homes have surprises. When our remodeling Escondido team discovers something unexpected, we stop, explain the situation, present options with pricing, and let you decide how to proceed. No work happens without your approval.' },
   ];
 
   return (
@@ -153,7 +153,7 @@ function WhatToExpectSection() {
       <Container size="md">
         <AnimatedSection animation="fade-in-up">
           <h2 className="text-3xl font-bold text-dark text-center mb-12">
-            What to Expect
+            Common Questions About Our Process
           </h2>
         </AnimatedSection>
 

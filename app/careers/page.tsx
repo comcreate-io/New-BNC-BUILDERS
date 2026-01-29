@@ -76,8 +76,8 @@ export default function CareersPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Join the BNC Builders Team - Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Experts"
-        subtitle="Build your career with BNC Builders Inc. - the leading contractor for kitchen remodeling services, kitchen remodel San Diego, bathroom remodeling Escondido, ADUs San Diego, deck repair San Diego, and remodeling Escondido."
+        title="Build Your Career With San Diego Leading Remodeling Team"
+        subtitle="BNC Builders is growing. We are looking for skilled craftspeople, project managers, and support staff who share our commitment to quality and client satisfaction. Join a team that builds better lives - for homeowners and employees alike."
         backgroundImage={bannerImages.faq}
       />
 
@@ -86,10 +86,10 @@ export default function CareersPage() {
         <Container size="md">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-zinc-900 mb-4">
-              Work With BNC Builders - Kitchen Remodeling Services & Remodeling Escondido Leaders
+              Why Talented People Choose BNC Builders
             </h2>
             <p className="text-lg text-zinc-600">
-              BNC Builders Inc. is always looking for talented individuals who share our commitment to quality and customer satisfaction. Join our team delivering kitchen remodel Escondido CA, kitchen remodel San Diego, kitchen remodel Poway, bathroom remodeling San Diego, bathroom remodeling Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido services. We offer competitive pay, growth opportunities, and a positive work environment.
+              We are not just another construction company. BNC Builders has built its reputation on quality kitchen remodel Escondido CA projects, bathroom remodeling San Diego transformations, ADUs San Diego builds, and complete remodeling Escondido solutions. Our team members take pride in craftsmanship that makes real differences in people lives. We offer competitive pay, consistent work, growth opportunities, and a culture that values collaboration over competition.
             </p>
           </div>
         </Container>
@@ -99,7 +99,7 @@ export default function CareersPage() {
       <Section background="gray">
         <Container>
           <h2 className="text-2xl font-bold text-zinc-900 text-center mb-8">
-            Our Core Values
+            The Values We Live By
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {coreValues.map((value) => (
@@ -120,7 +120,7 @@ export default function CareersPage() {
       <Section background="white">
         <Container size="md">
           <h2 className="text-2xl font-bold text-zinc-900 text-center mb-8">
-            Apply Now
+            Submit Your Application
           </h2>
 
           {submitted ? (
@@ -128,9 +128,9 @@ export default function CareersPage() {
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-green-800 mb-3">Application Submitted!</h3>
+              <h3 className="text-2xl font-bold text-green-800 mb-3">Application Received</h3>
               <p className="text-green-700 max-w-md mx-auto">
-                Thank you for your interest in joining BNC Builders. We will review your application and get back to you soon.
+                Thank you for your interest in joining BNC Builders. Our team will review your application and reach out if your experience matches an open position.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
@@ -210,7 +210,7 @@ export default function CareersPage() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="position" className="block text-sm font-medium text-zinc-700 mb-1">
-                    Position Interested In
+                    Position of Interest
                   </label>
                   <input
                     type="text"
@@ -218,7 +218,7 @@ export default function CareersPage() {
                     name="position"
                     value={formData.position}
                     onChange={handleChange}
-                    placeholder="e.g., Project Manager, Carpenter"
+                    placeholder="e.g., Project Manager, Finish Carpenter"
                     className={inputClasses}
                   />
                 </div>
@@ -233,19 +233,19 @@ export default function CareersPage() {
                     onChange={handleChange}
                     className={inputClasses}
                   >
-                    <option value="">Select experience level</option>
-                    <option value="0-1">0-1 years</option>
-                    <option value="1-3">1-3 years</option>
-                    <option value="3-5">3-5 years</option>
-                    <option value="5-10">5-10 years</option>
-                    <option value="10+">10+ years</option>
+                    <option value="">Select your experience level</option>
+                    <option value="0-1">Entry Level (0-1 years)</option>
+                    <option value="1-3">Developing (1-3 years)</option>
+                    <option value="3-5">Experienced (3-5 years)</option>
+                    <option value="5-10">Senior (5-10 years)</option>
+                    <option value="10+">Expert (10+ years)</option>
                   </select>
                 </div>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Tell Us About Yourself <span className="text-red-500">*</span>
+                  Tell Us About Your Experience <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -254,7 +254,7 @@ export default function CareersPage() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  placeholder="Share your relevant experience, skills, and why you'd like to join BNC Builders..."
+                  placeholder="Describe your relevant experience, skills, and what interests you about working at BNC Builders..."
                   className={inputClasses}
                 />
               </div>
@@ -275,7 +275,7 @@ export default function CareersPage() {
                 {isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Submitting...
+                    Sending...
                   </>
                 ) : (
                   <>

@@ -8,8 +8,8 @@ import { bannerImages, specialImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Download Our ADU Handbook | ADUs San Diego & ADUs Los Angeles | BNC Builders',
-  description: 'Get your free ADU Handbook from BNC Builders Inc. Learn everything about ADUs San Diego and ADUs Los Angeles construction, permits, and financing. The same experts trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and remodeling Escondido.',
+  title: 'Free ADU Planning Guide | ADUs San Diego & ADUs Los Angeles | BNC Builders',
+  description: 'Download our comprehensive guide to building ADUs San Diego and ADUs Los Angeles. Learn about permits, costs, design options, and ROI potential from BNC Builders - the same team trusted for kitchen remodel Escondido CA and bathroom remodeling San Diego.',
 });
 
 export default function ADUHandbookDownloadPage() {
@@ -17,8 +17,8 @@ export default function ADUHandbookDownloadPage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Download Our ADUs San Diego & ADUs Los Angeles Handbook"
-        subtitle="Your comprehensive guide to ADUs San Diego and ADUs Los Angeles construction from BNC Builders - the same experts trusted for kitchen remodel Escondido CA, kitchen remodel San Diego, bathroom remodeling San Diego, bathroom remodeling Escondido, deck repair San Diego, and remodeling Escondido."
+        title="Your Complete Guide to Building ADUs San Diego and ADUs Los Angeles"
+        subtitle="Planning an accessory dwelling unit? This free handbook covers everything from regulations to ROI - created by the same BNC Builders team trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and remodeling Escondido projects throughout San Diego County."
         backgroundImage={bannerImages.adu}
       />
 
@@ -28,43 +28,43 @@ export default function ADUHandbookDownloadPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-zinc-900 mb-6">
-                Everything You Need to Know About ADUs San Diego & ADUs Los Angeles
+                Everything You Need to Know Before Building an ADU
               </h2>
               <p className="text-lg text-zinc-600 mb-6">
-                Our comprehensive ADUs San Diego and ADUs Los Angeles Handbook covers everything from regulations and permits to design considerations and construction timelines. Whether you&apos;re looking to create rental income, house extended family, or add a home office, this guide from BNC Builders has you covered. We&apos;re the same team trusted for kitchen remodel Escondido CA, kitchen remodeling services, bathroom remodeling San Diego, bathroom remodeling Escondido, deck repair San Diego, exterior remodeling, and remodeling Escondido.
+                ADUs San Diego and ADUs Los Angeles represent significant investments with significant returns - when done right. This handbook distills our experience building dozens of accessory dwelling units into a practical guide that answers the questions homeowners actually ask. Whether you are considering rental income, housing for family, or simply adding value to your property, this resource from BNC Builders sets you up for success.
               </p>
 
-              <h3 className="text-xl font-bold text-zinc-900 mb-4">What&apos;s Inside:</h3>
+              <h3 className="text-xl font-bold text-zinc-900 mb-4">What You Will Learn:</h3>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">San Diego County ADU regulations and requirements</span>
+                  <span className="text-zinc-700">San Diego and Los Angeles ADU regulations - what you can build and where</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">Step-by-step permitting guide</span>
+                  <span className="text-zinc-700">Step-by-step permit process navigation tips that save months</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">Design options and floor plan ideas</span>
+                  <span className="text-zinc-700">Design options and floor plan concepts for different lot sizes</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">Cost estimates and financing options</span>
+                  <span className="text-zinc-700">Realistic cost breakdowns and financing options for ADUs San Diego</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-zinc-700">ROI and rental income potential</span>
+                  <span className="text-zinc-700">ROI calculations and rental income potential in today market</span>
                 </li>
               </ul>
             </div>
@@ -72,7 +72,7 @@ export default function ADUHandbookDownloadPage() {
             <div className="text-center">
               <CloudinaryImage
                 publicId={specialImages.aduHandbookCover}
-                alt="ADU Handbook Cover"
+                alt="BNC Builders ADU Handbook - Your Complete Guide to ADUs San Diego and ADUs Los Angeles"
                 width={400}
                 height={500}
                 className="rounded-lg shadow-xl mx-auto mb-6"
@@ -87,7 +87,7 @@ export default function ADUHandbookDownloadPage() {
         <Container size="sm">
           <div className="bg-white rounded-lg p-8 shadow-md">
             <h2 className="text-2xl font-bold text-zinc-900 text-center mb-6">
-              Get Your Free Copy
+              Download Your Free ADU Guide
             </h2>
             <form className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
@@ -130,7 +130,7 @@ export default function ADUHandbookDownloadPage() {
               </div>
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Phone
+                  Phone (Optional)
                 </label>
                 <input
                   type="tel"
@@ -140,10 +140,10 @@ export default function ADUHandbookDownloadPage() {
                 />
               </div>
               <Button type="submit" size="lg" className="w-full">
-                Download Free Handbook
+                Get My Free ADU Handbook
               </Button>
               <p className="text-xs text-zinc-500 text-center">
-                By downloading, you agree to receive occasional updates from BNC Builders Inc.
+                By downloading, you agree to receive occasional updates from BNC Builders about ADUs San Diego, kitchen remodel Escondido CA, bathroom remodeling San Diego, and other remodeling Escondido news.
               </p>
             </form>
           </div>

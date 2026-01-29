@@ -4,7 +4,7 @@ import { CompanyInfo, CoreValue, Accolade } from '../types';
 
 export const company: CompanyInfo = {
   name: 'BNC Builders Inc.',
-  tagline: 'We Build & Remodel Homes With Peace Of Mind!',
+  tagline: 'Transforming San Diego Homes With Expert Craftsmanship',
   phone: '(760) 993-3204',
   address: {
     street: '101 State Pl Suite N',
@@ -31,12 +31,12 @@ export const coreValues: CoreValue[] = [
 ];
 
 export const keySellingPoints = [
-  'Licensed & Insured for kitchen remodel Escondido CA and bathroom remodeling San Diego',
-  'Financing Options Available for ADUs San Diego and ADUs Los Angeles',
-  'Hablamos Español - kitchen remodeling services and remodeling Escondido',
-  'Free Estimates for kitchen remodel San Diego, deck repair San Diego, exterior remodeling',
-  'Accredited by Better Business Bureau for bathroom remodeling Escondido',
-  'Top-rated service provider for kitchen remodel Poway and Escondido kitchen remodeling',
+  'Fully licensed and insured contractor trusted for kitchen remodel Escondido CA, bathroom remodeling San Diego, and projects throughout the region',
+  'Flexible financing options make your ADUs San Diego, ADUs Los Angeles, room addition San Diego, or garage remodeling project affordable',
+  'Hablamos Español - bilingual team ready to discuss your kitchen remodeling services, deck repair San Diego, or remodeling Escondido needs',
+  'Free detailed estimates for kitchen remodel San Diego, exterior remodeling, outdoor kitchens, and landscape remodeling projects',
+  'BBB accredited business known for exceptional bathroom remodeling Escondido, bathroom remodel Escondido, and kitchen renovation San Diego results',
+  'Top-rated craftsmanship for kitchen remodel Poway, Escondido kitchen remodeling, deck repair contractor work, and 3D landscape design near me consultations',
 ];
 
 export const serviceAreas = [

@@ -9,8 +9,8 @@ import { generatePageMetadata } from '@/lib/utils/metadata';
 import { MapPin, Building2, Phone, ChefHat, Bath, Home, Building, Fence, UtensilsCrossed, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Kitchen Remodel San Diego | Kitchen Remodel Escondido CA | Bathroom Remodeling Escondido Areas | BNC Builders',
-  description: 'BNC Builders provides kitchen remodel Escondido CA, kitchen remodel San Diego, kitchen remodel Poway, kitchen remodeling services, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling San Diego, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido throughout San Diego County.',
+  title: 'San Diego Remodeling Service Areas | BNC Builders',
+  description: 'BNC Builders proudly serves Escondido, Poway, Carlsbad, Oceanside, and communities throughout San Diego County with kitchen remodeling, bathroom renovation, ADU construction, and complete home transformation services.',
 });
 
 const regions = {
@@ -29,12 +29,12 @@ const regions = {
 };
 
 const services = [
-  { title: 'Kitchen Remodel Escondido CA', href: '/kitchen-remodeling', icon: ChefHat },
-  { title: 'Bathroom Remodeling San Diego', href: '/bathroom-remodeling', icon: Bath },
-  { title: 'Remodeling Escondido', href: '/home-remodeling', icon: Home },
-  { title: 'ADUs San Diego & ADUs Los Angeles', href: '/adus', icon: Building },
-  { title: 'Exterior Remodelers', href: '/exterior-remodeling', icon: Fence },
-  { title: 'Outdoor Kitchens', href: '/outdoor-kitchens', icon: UtensilsCrossed },
+  { title: 'Kitchen Transformations', href: '/kitchen-remodeling', icon: ChefHat },
+  { title: 'Bathroom Renovations', href: '/bathroom-remodeling', icon: Bath },
+  { title: 'Complete Home Remodels', href: '/home-remodeling', icon: Home },
+  { title: 'ADU Construction', href: '/adus', icon: Building },
+  { title: 'Outdoor Living Spaces', href: '/exterior-remodeling', icon: Fence },
+  { title: 'Custom Outdoor Kitchens', href: '/outdoor-kitchens', icon: UtensilsCrossed },
 ];
 
 export default function AreasWeServePage() {
@@ -42,8 +42,8 @@ export default function AreasWeServePage() {
     <>
       {/* Hero */}
       <HeroSubpage
-        title="Kitchen Remodel San Diego, Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Service Areas"
-        subtitle="BNC Builders proudly serves kitchen remodeling services, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling San Diego, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, 3D landscape design near me, and remodeling Escondido throughout San Diego County."
+        title="Serving San Diego County Homeowners Since 2019"
+        subtitle="From our Escondido headquarters, BNC Builders brings expert craftsmanship to communities throughout the region. Kitchen remodel Escondido CA, bathroom remodeling San Diego, ADUs San Diego - wherever you call home, we are ready to help."
         backgroundImage={bannerImages.areasWeServe}
       />
 
@@ -53,13 +53,13 @@ export default function AreasWeServePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-gold font-semibold uppercase tracking-wider text-sm">
-                Our Home Base
+                Locally Rooted
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-dark mt-2 mb-4">
-                Remodeling Escondido Headquarters Serving All of San Diego County
+                Your Neighbors in the Remodeling Business
               </h2>
               <p className="text-lg text-zinc-600 mb-6">
-                From our remodeling Escondido and Escondido remodeling headquarters, BNC Builders proudly delivers kitchen remodel San Diego, kitchen remodel Escondido CA, kitchen remodel Escondido, kitchen remodel Poway, kitchen remodeling services, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling Escondido, bathroom remodeling San Diego, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and 3D landscape design near me. Our local expertise means we understand architectural styles, climate considerations, and permitting requirements.
+                BNC Builders is not a faceless corporation - we are your neighbors. Our team lives and works in San Diego County, which means we understand local architectural styles, climate considerations, and what permits require. When you choose us for your kitchen remodel San Diego, bathroom remodeling Escondido, or ADUs Los Angeles project, you are working with people who genuinely care about our shared community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -67,7 +67,7 @@ export default function AreasWeServePage() {
                   className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  Get a Free Quote
+                  Request Free Consultation
                 </a>
                 <a
                   href="https://maps.google.com/?q=101+State+Pl+Suite+N,+Escondido,+CA+92029"
@@ -76,7 +76,7 @@ export default function AreasWeServePage() {
                   className="inline-flex items-center justify-center gap-2 border-2 border-zinc-800 text-zinc-800 font-semibold px-6 py-3 rounded-lg hover:bg-zinc-800 hover:text-white transition-colors"
                 >
                   <MapPin className="w-5 h-5" />
-                  Visit Our Office
+                  Find Our Office
                 </a>
               </div>
             </div>
@@ -86,19 +86,19 @@ export default function AreasWeServePage() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4">
                   <div className="text-4xl font-bold text-zinc-900 mb-1">14+</div>
-                  <div className="text-zinc-800 text-sm">Cities Served</div>
+                  <div className="text-zinc-800 text-sm">Communities Served</div>
                 </div>
                 <div className="text-center p-4">
                   <div className="text-4xl font-bold text-zinc-900 mb-1">900+</div>
-                  <div className="text-zinc-800 text-sm">Projects Completed</div>
+                  <div className="text-zinc-800 text-sm">Homes Transformed</div>
                 </div>
                 <div className="text-center p-4">
                   <div className="text-4xl font-bold text-zinc-900 mb-1">30+</div>
-                  <div className="text-zinc-800 text-sm">Years Experience</div>
+                  <div className="text-zinc-800 text-sm">Years Combined Expertise</div>
                 </div>
                 <div className="text-center p-4">
                   <div className="text-4xl font-bold text-zinc-900 mb-1">5.0</div>
-                  <div className="text-zinc-800 text-sm">Star Rating</div>
+                  <div className="text-zinc-800 text-sm">Client Satisfaction</div>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-zinc-800/20">
@@ -120,10 +120,10 @@ export default function AreasWeServePage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
-              Kitchen Remodel Escondido CA & Bathroom Remodeling San Diego Communities
+              Communities We Proudly Serve
             </h2>
             <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-              No matter where you are in San Diego County, BNC Builders brings expert kitchen remodeling services, kitchen remodel San Diego, kitchen remodel Poway, kitchen renovation San Diego, bathroom remodeling Escondido, bathroom remodeling San Diego, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, exterior remodelers, exterior remodeling, garage remodeling, landscape remodeling, and outdoor kitchens quality.
+              From coastal Carlsbad to inland Escondido, BNC Builders delivers the same exceptional kitchen remodeling services, bathroom remodeling San Diego expertise, and ADUs San Diego quality to every neighborhood we work in.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export default function AreasWeServePage() {
           </div>
 
           <p className="text-center text-zinc-500 mt-8">
-            Don&apos;t see your city? <Link href="/contact-us" className="text-gold hover:underline font-medium">Contact us</Link> — we likely serve your area too!
+            Don&apos;t see your city? <Link href="/contact-us" className="text-gold hover:underline font-medium">Reach out</Link> - we likely serve your area for remodeling Escondido and surrounding communities!
           </p>
         </Container>
       </Section>
@@ -158,10 +158,10 @@ export default function AreasWeServePage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-dark mb-4">
-              Full-Service Kitchen Remodeling Services & Remodeling Escondido in Every Location
+              Full-Service Capabilities Everywhere We Work
             </h2>
             <p className="text-zinc-600">
-              All kitchen remodel San Diego, kitchen remodel Escondido CA, kitchen remodel Poway, kitchen renovation San Diego, bathroom remodeling Escondido, bathroom remodeling San Diego, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, and remodeling Escondido services available throughout San Diego County
+              Every community receives our complete range of kitchen remodel Escondido CA, bathroom remodeling Escondido, ADUs Los Angeles, deck repair San Diego, exterior remodeling, and landscape remodeling services.
             </p>
           </div>
 
@@ -194,16 +194,16 @@ export default function AreasWeServePage() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
               {
-                title: 'Local Expertise',
-                description: 'We know San Diego building codes, permit processes, and architectural styles inside and out.',
+                title: 'Permit Expertise',
+                description: 'We know San Diego County codes, inspectors, and approval processes inside out. Your kitchen renovation San Diego project moves faster.',
               },
               {
-                title: 'Quick Response',
-                description: 'Being local means faster consultations, quicker project starts, and responsive service.',
+                title: 'Same-Day Response',
+                description: 'Being local means we can visit your property quickly, answer questions promptly, and start your deck repair contractor project sooner.',
               },
               {
-                title: 'Community Focused',
-                description: 'We live and work here too. Your neighbors are our neighbors, and your referrals are our reputation.',
+                title: 'Reputation Matters',
+                description: 'Your neighbors are our neighbors. We stake our garage remodeling and outdoor kitchens reputation on every project we complete.',
               },
             ].map((item, index) => (
               <div key={index} className="p-6">
@@ -217,9 +217,9 @@ export default function AreasWeServePage() {
 
       {/* CTA */}
       <CTABanner
-        title="Ready for Kitchen Remodel Escondido CA, Kitchen Remodel San Diego, or Bathroom Remodeling San Diego?"
-        subtitle="Contact BNC Builders for kitchen remodeling services, kitchen remodel Poway, kitchen renovation San Diego, Escondido kitchen remodeling, bathroom remodeling Escondido, bathroom remodel Escondido, ADUs San Diego, ADUs Los Angeles, deck repair San Diego, deck repair contractor, deck repair, room addition San Diego, exterior remodeling, exterior remodelers, garage remodeling, landscape remodeling, outdoor kitchens, outdoor decking material, 3D landscape design near me, and remodeling Escondido anywhere in San Diego County."
-        primaryAction={{ label: 'Get Free Quote', href: '/contact-us' }}
+        title="Ready to Transform Your San Diego Home?"
+        subtitle="Whether you need kitchen remodel Poway, bathroom remodeling Escondido, ADUs San Diego, room addition San Diego, or complete exterior remodelers services, BNC Builders is ready to bring your vision to life."
+        primaryAction={{ label: 'Start Your Project', href: '/contact-us' }}
       />
     </>
   );
