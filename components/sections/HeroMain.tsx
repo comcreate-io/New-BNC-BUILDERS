@@ -3,7 +3,7 @@
 import { Container, Button } from '@/components/ui';
 import { CloudinaryImage } from '@/components/ui/CloudinaryImage';
 import { heroImages } from '@/lib/constants/images';
-import { company, keySellingPoints } from '@/lib/constants/company';
+import { company } from '@/lib/constants/company';
 
 export function HeroMain() {
   return (
@@ -58,25 +58,6 @@ export function HeroMain() {
               </Button>
             </div>
 
-            {/* Key Points */}
-            <div className="flex flex-wrap gap-4 mt-8">
-              {keySellingPoints.slice(0, 4).map((point, index) => (
-                <span
-                  key={point}
-                  className="inline-flex items-center gap-2 text-sm text-zinc-300 animate-[fadeInUp_0.5s_ease-out_both]"
-                  style={{ animationDelay: `${1.2 + index * 0.1}s` }}
-                >
-                  <svg className="w-4 h-4 text-gold-light" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  {point}
-                </span>
-              ))}
-            </div>
           </div>
 
           {/* Hero Image on right with float animation */}
