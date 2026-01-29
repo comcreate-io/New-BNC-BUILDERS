@@ -2,10 +2,11 @@
 
 import { Metadata } from 'next';
 import { HeroSubpage } from '@/components/sections';
-import { Container, Section, Button } from '@/components/ui';
+import { Container, Section } from '@/components/ui';
 import { CloudinaryImage } from '@/components/ui/CloudinaryImage';
 import { bannerImages, specialImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
+import { ADUHandbookForm } from './ADUHandbookForm';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Free ADU Planning Guide | ADUs San Diego & ADUs Los Angeles | BNC Builders',
@@ -85,68 +86,7 @@ export default function ADUHandbookDownloadPage() {
       {/* Download Form */}
       <Section background="gray">
         <Container size="sm">
-          <div className="bg-white rounded-lg p-8 shadow-md">
-            <h2 className="text-2xl font-bold text-zinc-900 text-center mb-6">
-              Download Your Free ADU Guide
-            </h2>
-            <form className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-zinc-700 mb-1">
-                    First Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-zinc-700 mb-1">
-                    Last Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Email <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Phone (Optional)
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-              <Button type="submit" size="lg" className="w-full">
-                Get My Free ADU Handbook
-              </Button>
-              <p className="text-xs text-zinc-500 text-center">
-                By downloading, you agree to receive occasional updates from BNC Builders about ADUs San Diego, kitchen remodel Escondido CA, bathroom remodeling San Diego, and other remodeling Escondido news.
-              </p>
-            </form>
-          </div>
+          <ADUHandbookForm />
         </Container>
       </Section>
     </>

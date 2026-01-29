@@ -1,11 +1,12 @@
 // BNC Builders - Customer Referral Program Page
 
 import { Metadata } from 'next';
-import { HeroSubpage, CTABanner } from '@/components/sections';
-import { Container, Section, Button } from '@/components/ui';
+import { HeroSubpage } from '@/components/sections';
+import { Container, Section } from '@/components/ui';
 import { CloudinaryImage } from '@/components/ui/CloudinaryImage';
 import { bannerImages, specialImages } from '@/lib/constants/images';
 import { generatePageMetadata } from '@/lib/utils/metadata';
+import { ReferralForm } from './ReferralForm';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Refer a Friend, Earn Rewards | BNC Builders Customer Referral Program',
@@ -73,102 +74,7 @@ export default function CustomerReferralProgramPage() {
           <h2 className="text-2xl font-bold text-zinc-900 text-center mb-8">
             Submit Your Referral
           </h2>
-          <form className="bg-white rounded-lg p-8 shadow-md space-y-6">
-            <h3 className="font-semibold text-zinc-900">Your Contact Information</h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div>
-                <label htmlFor="referrerName" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Your Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="referrerName"
-                  name="referrerName"
-                  required
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-              <div>
-                <label htmlFor="referrerEmail" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Your Email <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="referrerEmail"
-                  name="referrerEmail"
-                  required
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-              <div>
-                <label htmlFor="referrerPhone" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Your Phone <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="referrerPhone"
-                  name="referrerPhone"
-                  required
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-            </div>
-
-            <h3 className="font-semibold text-zinc-900 pt-4">Who Are You Referring?</h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div>
-                <label htmlFor="referredName" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Their Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="referredName"
-                  name="referredName"
-                  required
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-              <div>
-                <label htmlFor="referredEmail" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Their Email
-                </label>
-                <input
-                  type="email"
-                  id="referredEmail"
-                  name="referredEmail"
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-              <div>
-                <label htmlFor="referredPhone" className="block text-sm font-medium text-zinc-700 mb-1">
-                  Their Phone
-                </label>
-                <input
-                  type="tel"
-                  id="referredPhone"
-                  name="referredPhone"
-                  className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-zinc-700 mb-1">
-                What Project Are They Interested In?
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={3}
-                placeholder="e.g., Kitchen remodel Escondido, bathroom remodeling San Diego, ADUs San Diego, deck repair..."
-                className="w-full px-4 py-3 border border-zinc-300 rounded-md focus:ring-2 focus:ring-gold"
-              />
-            </div>
-
-            <Button type="submit" size="lg" className="w-full">
-              Submit Referral
-            </Button>
-          </form>
+          <ReferralForm />
         </Container>
       </Section>
     </>
