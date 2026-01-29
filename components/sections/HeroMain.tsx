@@ -30,7 +30,7 @@ export function HeroMain() {
               Kitchen Remodel Escondido CA | Bathroom Remodeling San Diego | ADUs San Diego
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 leading-tight text-white animate-[fadeInUp_0.6s_ease-out_0.4s_both]">
-              {company.tagline}
+              We Build & Remodel Homes With Peace Of Mind!
             </h1>
             <p className="text-lg sm:text-xl text-zinc-300 mb-6 sm:mb-8 max-w-lg animate-[fadeInUp_0.6s_ease-out_0.6s_both]">
               BNC Builders delivers expert kitchen remodeling services, bathroom remodeling Escondido, ADUs Los Angeles, deck repair San Diego, room addition San Diego, and exterior remodeling for your dream home.
