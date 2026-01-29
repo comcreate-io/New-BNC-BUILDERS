@@ -25,7 +25,7 @@ export function HeroMain() {
       setTimeout(() => {
         setCurrentBadge((prev) => (prev + 1) % badges.length);
         setIsSpinning(false);
-      }, 300);
+      }, 500);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -91,8 +91,8 @@ export function HeroMain() {
               {/* Experience Badge */}
               <div className="absolute top-4 right-4 z-10">
                 <div
-                  className="bg-white rounded-xl px-5 py-4 shadow-2xl border-l-4 border-gold transition-transform duration-300"
-                  style={{ transform: isSpinning ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
+                  className="bg-white rounded-xl px-5 py-4 shadow-2xl border-l-4 border-gold transition-transform duration-500"
+                  style={{ transform: isSpinning ? 'rotateY(720deg)' : 'rotateY(0deg)' }}
                 >
                   <div className="flex items-center gap-3">
                     <div className="bg-gold/10 rounded-full p-2">
