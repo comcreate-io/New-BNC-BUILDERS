@@ -75,9 +75,13 @@ export function Header() {
               />
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-6">
+            {/* Desktop Navigation - Centered */}
+            <div className="hidden lg:flex items-center justify-center flex-1">
               <Navigation items={mainNavigation} />
+            </div>
+
+            {/* Phone Button */}
+            <div className="hidden lg:block">
               <a
                 href={`tel:${company.phone.replace(/[^0-9]/g, '')}`}
                 className="flex items-center gap-2 bg-gold hover:bg-gold-light text-white px-6 py-3 rounded font-bold uppercase tracking-wide transition-all"
