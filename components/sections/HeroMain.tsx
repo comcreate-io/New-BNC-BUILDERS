@@ -26,7 +26,7 @@ export function HeroMain() {
         setCurrentBadge((prev) => (prev + 1) % badges.length);
         setIsSpinning(false);
       }, 500);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
