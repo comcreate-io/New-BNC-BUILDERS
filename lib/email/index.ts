@@ -275,7 +275,7 @@ export async function sendAutoReply(email: string, firstName: string): Promise<v
           <p>Email: <a href="mailto:contact@bncbuilders.net">contact@bncbuilders.net</a></p>
 
           <p style="margin-top: 30px;">In the meantime, feel free to browse our portfolio to see examples of our work:</p>
-          <a href="https://bncbuilders.net/portfolio" class="cta">View Our Portfolio</a>
+          <a href="https://www.bncbuildersinc.com/portfolio" class="cta">View Our Portfolio</a>
         </div>
         <div class="footer">
           <p>BNC Builders Inc.</p>
@@ -299,7 +299,7 @@ Contact us directly:
 Phone: (760) 249-7207
 Email: contact@bncbuilders.net
 
-In the meantime, feel free to browse our portfolio at https://bncbuilders.net/portfolio
+In the meantime, feel free to browse our portfolio at https://www.bncbuildersinc.com/portfolio
 
 ---
 BNC Builders Inc.
