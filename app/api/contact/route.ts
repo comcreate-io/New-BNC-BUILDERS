@@ -1,7 +1,7 @@
 // BNC Builders - Contact Form API Route
 
 import { NextRequest, NextResponse } from 'next/server';
-import { sendContactEmail, sendAutoReply } from '@/lib/email';
+import { sendContactToGHL } from '@/lib/ghl';
 
 interface ContactFormData {
   firstName: string;
@@ -68,11 +68,12 @@ export async function POST(request: NextRequest) {
       reason: body.reason?.trim(),
     };
 
-    // Send email to BNC team
-    await sendContactEmail(formData);
+    // Send to GoHighLevel CRM
+    const ghlResult = await sendContactToGHL(formData);
 
-    // Send auto-reply to customer
-    await sendAutoReply(formData.email, formData.firstName);
+    if (!ghlResult.success) {
+      console.error('GHL webhook failed:', ghlResult.error);
+    }
 
     return NextResponse.json(
       { success: true, message: 'Thank you! We will contact you soon.' },
