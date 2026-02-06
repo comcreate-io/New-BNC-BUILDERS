@@ -30,6 +30,18 @@ export async function sendContactToGHL(data: {
   }
 
   try {
+    // Build message with customer status and service interest
+    const customerStatus = data.isNewCustomer === 'yes'
+      ? 'New Customer'
+      : data.isNewCustomer === 'no'
+        ? 'Existing Customer'
+        : '';
+
+    const messageParts = [];
+    if (customerStatus) messageParts.push(`Customer Status: ${customerStatus}`);
+    if (data.reason) messageParts.push(`Service Interest: ${data.reason}`);
+    if (data.message) messageParts.push(`Message: ${data.message}`);
+
     const payload = {
       firstName: data.firstName,
       lastName: data.lastName,
@@ -39,9 +51,7 @@ export async function sendContactToGHL(data: {
       city: data.city || '',
       state: data.state || '',
       zipCode: data.zipCode || '',
-      isNewCustomer: data.isNewCustomer || '',
-      message: data.message || '',
-      reason: data.reason || '',
+      message: messageParts.join('\n\n'),
     };
 
     const response = await fetch(webhookUrl, {
