@@ -24,7 +24,7 @@ export function generatePageMetadata({
   title,
   description,
   path = '',
-  ogImage = '/opengraph-image',
+  ogImage = '/api/og',
   keywords = [],
   noIndex = false,
   article,
@@ -151,8 +151,8 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more. 30+ years experience.',
     images: [
       {
-        url: `${SITE_URL}/opengraph-image`,
-        secureUrl: `${SITE_URL}/opengraph-image`,
+        url: `${SITE_URL}/api/og`,
+        secureUrl: `${SITE_URL}/api/og`,
         width: 1200,
         height: 630,
         alt: `${company.name} - Home Remodeling`,
@@ -169,7 +169,7 @@ export const defaultMetadata: Metadata = {
     description: 'Professional home remodeling services in Escondido & San Diego County. Kitchen, bathroom, ADU construction & more.',
     images: [
       {
-        url: `${SITE_URL}/opengraph-image`,
+        url: `${SITE_URL}/api/og`,
         alt: `${company.name} - Home Remodeling`,
       },
     ],
