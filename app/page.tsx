@@ -89,9 +89,6 @@ export default function HomePage() {
       {/* Hero Section */}
       <HeroMain />
 
-      {/* Quick Contact Form */}
-      <QuickContactForm />
-
       {/* Trust Badges */}
       <TrustBadges showBadges={false} showSellingPoints={true} />
 
