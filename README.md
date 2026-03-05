@@ -1,36 +1,196 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BNC Builders Inc. — Website
+
+The official website for **BNC Builders Inc.**, a licensed and insured home remodeling contractor based in Escondido, CA serving the greater San Diego and Los Angeles areas. Built with Next.js 16, React 19, and Tailwind CSS 4.
+
+**Live site:** [bncbuilders.com](https://bncbuilders.com)
+
+## About BNC Builders
+
+BNC Builders specializes in residential remodeling and construction with 30+ years of combined experience and 900+ completed projects. Services span interior renovations, exterior transformations, and ADU construction across 14+ San Diego-area cities.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **UI:** React 19, Tailwind CSS 4
+- **Language:** TypeScript
+- **Fonts:** PT Sans (body), Geologica (headings)
+- **Icons:** Lucide React
+- **Images:** Cloudinary CDN
+- **Email:** Nodemailer (SMTP)
+- **CRM:** GoHighLevel (webhook integration)
+- **Spam Protection:** Google reCAPTCHA v3
+- **Analytics:** Google Tag Manager (GTM-WPZSVJGL)
+- **Ads:** Google Ads conversion tracking
+
+## Project Structure
+
+```
+app/
+├── layout.tsx                    # Root layout, fonts, GTM, JSON-LD
+├── globals.css                   # Global styles (Tailwind)
+├── page.tsx                      # Homepage
+├── sitemap.ts                    # Dynamic sitemap generation
+├── robots.ts                     # Robots.txt configuration
+├── manifest.ts                   # PWA manifest
+├── opengraph-image.tsx           # Dynamic OG image generation
+│
+├── (service pages)/              # One page per service
+│   ├── home-remodeling/
+│   ├── kitchen-remodeling/
+│   ├── bathroom-remodeling/
+│   ├── garage-remodeling/
+│   ├── new-room-additions/
+│   ├── pre-construction/
+│   ├── exterior-remodeling/
+│   ├── adus/
+│   ├── deck-repair/
+│   ├── hardscaping/
+│   ├── outdoor-kitchens/
+│   ├── landscape-remodeling/
+│   └── 3d-landscape-design/
+│
+├── about-us/                     # Company info
+├── our-process/                  # How we work
+├── reviews/                      # Customer reviews
+├── contact-us/                   # Contact form
+├── careers/                      # Job applications
+├── portfolio/                    # Project gallery
+│   ├── [category]/               # Category pages
+│   └── [category]/[project]/     # Individual project pages
+├── blog/                         # Blog listing
+│   └── [slug]/                   # Individual blog posts
+├── areas-we-serve/               # Service area page
+├── customer-referral-program/    # Referral form
+├── adu-handbook-download/        # Lead magnet download
+├── documentation/                # Internal docs
+├── site-map/                     # HTML sitemap
+│
+├── lp/                           # Paid search landing pages (noindex)
+│   ├── remodel/                  # Remodeling campaign LP
+│   └── adu/                      # ADU campaign LP
+│
+└── api/
+    ├── contact/route.ts          # Contact form API
+    └── careers/route.ts          # Careers form API
+
+components/
+├── forms/                        # ContactForm, QuickContactForm
+├── landing/                      # LandingPageLayout, LandingPageForm
+├── layout/                       # Header, Footer, Navigation, MobileMenu
+├── sections/                     # Reusable page sections (Hero, CTA, FAQ, etc.)
+├── seo/                          # JSON-LD structured data
+└── ui/                           # Button, Card, Carousel, CloudinaryImage, etc.
+
+lib/
+├── constants/                    # Company info, services, navigation, images, portfolio, blog
+├── email/                        # Nodemailer email service
+├── ghl/                          # GoHighLevel CRM webhook integration
+├── hooks/                        # Custom React hooks (useInView)
+├── recaptcha/                    # reCAPTCHA utilities
+├── types/                        # TypeScript type definitions
+└── utils/                        # Cloudinary, geolocation, metadata helpers
+
+email-templates/                  # HTML email templates for notifications
+```
+
+## Services
+
+### Interior
+- Home Remodeling
+- Kitchen Remodeling
+- Bathroom Remodeling
+- Garage Remodeling
+- New Room Additions
+- Pre-Construction (planning, permits, 3D previews)
+
+### Exterior
+- Exterior Remodeling
+- ADUs (Accessory Dwelling Units) — San Diego & Los Angeles
+- Deck Repair
+- Hardscaping
+- Outdoor Kitchens
+- Landscape Remodeling
+- 3D Landscape Design
+
+## Key Features
+
+- **SEO Optimized** — Structured data (JSON-LD), dynamic sitemaps, per-page meta, OpenGraph images
+- **Conversion-Focused Landing Pages** — Dedicated `/lp/remodel` and `/lp/adu` pages for paid search with no navigation, dynamic city insertion via IP geolocation, and Google Ads conversion tracking
+- **CRM Integration** — Form submissions are sent to GoHighLevel via webhook and email notifications via SMTP
+- **Responsive Design** — Mobile-first with sticky headers, mobile menu, scroll-to-top, and sticky call buttons on landing pages
+- **Image Optimization** — All images served via Cloudinary CDN with responsive sizing
+- **Portfolio System** — Category-based project gallery with individual project pages
+- **Blog** — Dynamic blog with slug-based routing
+- **Bilingual Support** — "Hablamos Espanol" highlighted as a key selling point
+- **reCAPTCHA v3** — Spam protection on all forms
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- npm, yarn, pnpm, or bun
 
+### Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+# Site
+NEXT_PUBLIC_SITE_URL=https://bncbuilders.com
 
-## Learn More
+# SMTP (email notifications)
+SMTP_HOST=
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=
+SMTP_PASS=
 
-To learn more about Next.js, take a look at the following resources:
+# GoHighLevel CRM
+GHL_WEBHOOK_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# reCAPTCHA
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=
+RECAPTCHA_SECRET_KEY=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Cloudinary
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+```
 
-## Deploy on Vercel
+### Development
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build
+```bash
+npm run build
+npm start
+```
+
+### Lint
+```bash
+npm run lint
+```
+
+## Branding
+
+- **Primary Color:** Gold `#CF9C39`
+- **Neutral Palette:** Zinc/Gray scale
+- **Body Font:** PT Sans
+- **Heading Font:** Geologica
+- **Theme Color:** `#CF9C39`
+
+## Service Areas
+
+Escondido, Carlsbad, Chula Vista, El Cajon, Encinitas, La Mesa, National City, Oceanside, Poway, Vista, La Jolla, Valley Center, Solana Beach, Rancho Santa Fe
+
+## Additional Documentation
+
+- [Landing Pages Documentation](./LANDING_PAGES_README.md) — Detailed guide for the paid search landing pages
