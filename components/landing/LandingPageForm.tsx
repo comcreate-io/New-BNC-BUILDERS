@@ -117,7 +117,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
 
     if (variant === 'short') {
       return (
-        <div ref={ref} className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+        <div ref={ref} className="bg-white rounded-2xl shadow-xl border border-zinc-100 p-6 md:p-8">
           <h3 className="text-xl md:text-2xl font-bold text-dark mb-6">
             {formType === 'adu' ? 'Start Your ADU Consultation' : 'Start Your Free Estimate'}
           </h3>
@@ -173,7 +173,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-gold hover:bg-gold-light text-white px-6 py-4 rounded-lg font-bold uppercase tracking-wide transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full btn-animated hover-glow bg-gold hover:bg-gold-light text-white px-6 py-4 rounded-lg font-bold uppercase tracking-wide transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>
@@ -194,7 +194,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
 
     // Full Form
     return (
-      <div ref={ref} className="bg-white rounded-2xl shadow-lg p-6 md:p-10">
+      <div ref={ref} className="bg-white rounded-2xl shadow-xl border border-zinc-100 p-6 md:p-10">
         <h3 className="text-2xl md:text-3xl font-bold text-dark mb-6">
           {formType === 'adu'
             ? `Request Your ADU Consultation in ${city}`
@@ -307,7 +307,7 @@ export const LandingPageForm = forwardRef<HTMLDivElement, LandingPageFormProps>(
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gold hover:bg-gold-light text-white px-8 py-4 rounded-lg font-bold uppercase tracking-wide transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+            className="w-full btn-animated hover-glow bg-gold hover:bg-gold-light text-white px-8 py-4 rounded-lg font-bold uppercase tracking-wide transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-lg"
           >
             {isSubmitting ? (
               <>
